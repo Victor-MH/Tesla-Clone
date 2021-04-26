@@ -1,24 +1,24 @@
 import React from "react";
-import { View, Text, Pressable } from "react-native";
+import { View } from "react-native";
 // Styles
 import PairedBtnsStyle from "../styles/PairedBtnsStyle";
+// Components
+import StyledBtn from "../components/StyledBtn";
 
 const PairedBtns = (props) => {
   return (
     <View style={PairedBtnsStyle.container}>
-      <Pressable
-        style={PairedBtnsStyle.button}
-        onPress={() => console.warn("hey")}
-        >
-            <Text style={PairedBtnsStyle.text}>Custom Order</Text>
-      </Pressable>
+      <StyledBtn
+        btnType="primary"
+        content="Custom Order"
+        onPress={() => console.warn("Custom order")}
+      />
 
-      <Pressable
-        style={PairedBtnsStyle.button}
-        onPress={() => console.warn("hey")}
-        >
-            <Text style={PairedBtnsStyle.text}>Existing Inventory</Text>
-      </Pressable>
+      <StyledBtn
+        btnType="secondary"
+        content="Existing inventory"
+        onPress={() => console.warn("Existing inventory")}
+      />
     </View>
   );
 };

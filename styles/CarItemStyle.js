@@ -5,7 +5,7 @@ const CarItemStyles = StyleSheet.create({
     width: "100%",
     height: "100%",
     alignItems: "center",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
     // justifyContent: 'flex-start'
   },
   titles: {
