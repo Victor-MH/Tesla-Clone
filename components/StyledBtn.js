@@ -6,8 +6,8 @@ import StyledBtnStyle from "../styles/StyledBtnStyle";
 const StyledBtn = (props) => {
   const { btnType, content, onPress } = props;
 
-  // DARK:#171A20CC - LIGHT:#FFFFFFA6
-  const bgColor = btnType === "primary" ? "#37383DEE" : "#DBD8DAA6";
+  // DARK:#171A20CC - LIGHT:#FFFFFFA6 / #DBD8DAA6
+  const bgColor = btnType === "primary" ? "#37383DEE" : "#FFFFFF56";
   const txtColor = btnType === "primary" ? "#FFFFFF" : "#171A20";
 
   return (

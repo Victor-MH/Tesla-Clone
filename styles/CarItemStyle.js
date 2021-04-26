@@ -5,8 +5,6 @@ const CarItemStyles = StyleSheet.create({
     width: "100%",
     height: "100%",
     alignItems: "center",
-    // justifyContent: "space-between",
-    // justifyContent: 'flex-start'
   },
   titles: {
     paddingTop: "25%",
@@ -18,9 +16,9 @@ const CarItemStyles = StyleSheet.create({
     fontSize: 40,
     fontWeight: "500",
     // color: Appearance.getColorScheme()==='dark' ? 'black' : 'white' ,
-    color: "#000",
+    color: "white",
   },
-  price: {
+  subtitle: {
     fontSize: 16,
     color: "#5C5E62",
   },
@@ -30,6 +28,9 @@ const CarItemStyles = StyleSheet.create({
     resizeMode: "cover",
     position: "absolute",
   },
+  cta: {
+    textDecorationLine: 'underline'
+  }
 });
 
 export default CarItemStyles;

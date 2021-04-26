@@ -15,12 +15,18 @@ export default function App() {
   return (
     <View style={styles.container}>
 
+      {/* <CarItem
+        title='Model S'
+        subtitle='Starting at $69,420'
+        backImg={modelS}
+      /> */}
+
       <CarItem
         title='Model S'
-        price='Starting at $69,420'
+        subtitle='Order online for'
+        cta='Touchless delivery'
         backImg={modelS}
       />
-
       
       
 
