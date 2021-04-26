@@ -1,8 +1,10 @@
 import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+// Styles
 import CarItemStyles from '../styles/CarItemStyle';
-
+// Components
+import PairedBtns from './PairedBtns';
 
 export const CarItem = (props) => {
     const {backImg, title, price} = props;
@@ -31,6 +33,8 @@ export const CarItem = (props) => {
           </View>
           
         </LinearGradient>
+
+        <PairedBtns/>
       </View>
 
     )

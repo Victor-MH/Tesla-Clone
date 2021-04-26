@@ -20,6 +20,8 @@ export default function App() {
         price='Starting at $69,420'
         backImg={modelS}
       />
+
+      
       
 
       <StatusBar style="auto" />
