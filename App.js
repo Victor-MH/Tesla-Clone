@@ -4,6 +4,7 @@ import { Appearance, StyleSheet, Text, View } from 'react-native';
 // Components
 import CarItem from './components/CarItem';
 import modelS from './assets/ModelS.jpeg'
+import CarsList from './components/CarsList';
 
 export default function App() {
 
@@ -21,14 +22,14 @@ export default function App() {
         backImg={modelS}
       /> */}
 
-      <CarItem
+      {/* <CarItem
         title='Model S'
         subtitle='Order online for'
         cta='Touchless delivery'
         backImg={modelS}
-      />
+      /> */}
       
-      
+      <CarsList/>
 
       <StatusBar style="auto" />
     </View>

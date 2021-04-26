@@ -7,13 +7,13 @@ import CarItemStyles from "../styles/CarItemStyle";
 import PairedBtns from "./PairedBtns";
 
 export const CarItem = (props) => {
-  const { backImg, title, subtitle, cta } = props;
+  const { backImg, title, subtitle, cta } = props.car;
 
   return (
     <View style={CarItemStyles.carContainer}>
       <ImageBackground source={backImg} style={CarItemStyles.imageBackground} />
       <LinearGradient
-        colors={["black", "#0000"]}
+        colors={["#0009", "#0000"]}
         start={{
           x: 0.5,
           y: 0,

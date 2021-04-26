@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 
 const CarItemStyles = StyleSheet.create({
   carContainer: {
     width: "100%",
-    height: "100%",
-    alignItems: "center",
+    height: Dimensions.get('window').height,
+    // alignItems: "center",
   },
   titles: {
     paddingTop: "25%",
