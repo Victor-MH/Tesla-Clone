@@ -5,6 +5,7 @@ import { Appearance, StyleSheet, Text, View } from 'react-native';
 import CarItem from './components/CarItem';
 import modelS from './assets/ModelS.jpeg'
 import CarsList from './components/CarsList';
+import Header from './components/Header';
 
 export default function App() {
 
@@ -15,6 +16,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      {/* <StatusBar style="light" backgroundColor="#122437"/> */}
+      <StatusBar style="auto"/>
 
       {/* <CarItem
         title='Model S'
@@ -28,10 +31,9 @@ export default function App() {
         cta='Touchless delivery'
         backImg={modelS}
       /> */}
-      
+      <Header/>
       <CarsList/>
 
-      <StatusBar style="auto" />
     </View>
   );
 }

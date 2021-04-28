@@ -3,7 +3,7 @@ import { Dimensions, StyleSheet } from "react-native";
 const CarItemStyles = StyleSheet.create({
   carContainer: {
     width: "100%",
-    height: Dimensions.get('window').height,
+    minHeight: Dimensions.get('window').height,
     // alignItems: "center",
   },
   titles: {
